@@ -1,0 +1,4 @@
+This game is played on different board size.
+it played in such a way the when you click a button the number increases by one.
+The number ranges fron 1....4.
+the button which reaches 4 wins the game and the color changes either blue or red.

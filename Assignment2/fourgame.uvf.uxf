@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.1">
+  <zoom_level>20</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>320</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Colorclicker
++ main(args:String[]):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>300</y>
+      <w>300</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Package::fourgame
+ColorClickerGUI
+--
+-frame: JFrame
+-boardGUI: BoardGUI
+-INITIAL_BOARD_SIZE: int
+--
++ ColorClickerGUI()
+-boardSizes: int[]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>360</x>
+      <y>120</y>
+      <w>360</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>Package::fourgame
+BoardGUI
+--
+-buttons: JButton[][]
+-board: Board
+-points: ArrayList&lt;Points&gt;
+-currentPlayer: String
+hasWinner:Boolean
+value: int
+--
++BoardGUI(boradSize: int)
+--
+-hasWinner(): void
+-togglePlayer(): void
++getBoardPanel(): Panel
+ButtonListener
++resetBoard(): void
+
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>20</x>
+      <y>140</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>JFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>60</x>
+      <y>140</y>
+      <w>100</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60;60;60;160</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>420</x>
+      <y>0</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>JPanel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>460</x>
+      <y>0</y>
+      <w>100</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>60;60;60;120</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>380</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60;60;120;60</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>820</x>
+      <y>0</y>
+      <w>340</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>Package::fourgame
+Board
+--
+-board: Field[][]
+-boardSize: final int
+-currentPlayer: String
+--
++Board()
++isOver(): boolean
++get(y:int,x:int): Field
++get(point: Point)
++getBoardSize(): int
+
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>660</x>
+      <y>160</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60;60;160;60</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>800</x>
+      <y>440</y>
+      <w>320</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Package::fourgame
+Field
+--
+-color: Color 
+-number: int
+--
++Field()
+--
++getColor(): Color
++setColor(color: Color): void
++getNumber(): int
++setNumber(number: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>860</x>
+      <y>320</y>
+      <w>100</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60;60;60;120</additional_attributes>
+  </element>
+</diagram>
