@@ -1,0 +1,5 @@
+This game is played on a board.
+The consist of a snake and a bit.
+As the snake eats the bit it size increase to one.
+The game have different levels there by the speed of the snake is increased.
+The games ends as the size of the snake reaches a certain length.
