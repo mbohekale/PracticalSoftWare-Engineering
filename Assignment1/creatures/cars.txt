@@ -1,0 +1,6 @@
+4
+jeep r 4
+walked w 7
+toy s 12
+snake s 10
+sccrrrssc

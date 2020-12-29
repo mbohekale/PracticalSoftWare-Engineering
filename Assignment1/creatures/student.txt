@@ -1,0 +1,6 @@
+4
+wanderer1 r 4
+walk2 w 7
+slider4 s 12
+sneaky7 s 10
+sccrrrssc

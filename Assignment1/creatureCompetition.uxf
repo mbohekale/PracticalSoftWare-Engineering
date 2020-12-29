@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.1">
+  <zoom_level>15</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>45</x>
+      <y>0</y>
+      <w>405</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>/AbstractCreatures/
+-name:String
+-type:String
+-waterlevel:int
+--------------------
++Creatures(name:String,intialWater:int)
+--------------------
++getName(): String
++getType():String
++getInitailWater():int
++isAlive():boolean
++toString():String
++sunny():void
++rainy():void
++cloudy():void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>420</y>
+      <w>165</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Walker
+----------
++Walker(name:String,waterlevel)
+---------------
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>195</x>
+      <y>420</y>
+      <w>150</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Sandrunner
+----------
++Sandrunner(name:String,waterlevel)
+---------------
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>375</x>
+      <y>420</y>
+      <w>330</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Sponge
+----------
++Sponge(name:String,waterlevel)
+---------------</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>0</x>
+      <y>285</y>
+      <w>89</w>
+      <h>164</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>60;45;45;135</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>195</x>
+      <y>285</y>
+      <w>74</w>
+      <h>164</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>45;45;45;135</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>360</x>
+      <y>285</y>
+      <w>74</w>
+      <h>164</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>45;45;45;135</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>510</x>
+      <y>0</y>
+      <w>300</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>CreatuesDataBase
+creatures:ArrayList&lt;Creatures&gt;
+---------------------
++CreatuesDataBase()
+----------------------
++read():void
++report():void
++getMaxValue():int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>885</x>
+      <y>210</y>
+      <w>270</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>InvalidInputException
+----------------------------------------
++InvalidInputException()
+----------------------------------------</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>915</x>
+      <y>15</y>
+      <w>150</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Exception</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>945</x>
+      <y>15</y>
+      <w>74</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>45;45;45;195</additional_attributes>
+  </element>
+</diagram>

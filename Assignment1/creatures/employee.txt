@@ -1,0 +1,6 @@
+4
+rank r 4
+water w 7
+slider s 12
+snail s 10
+sccrrrssc
