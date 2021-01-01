@@ -6,6 +6,6 @@
 ###### Objects
 ### Project2
 ###### swing GUI
-##### MVC model
+###### MVC model
 ### Project3
 ##### Games
